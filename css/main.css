@@ -364,6 +364,10 @@ section.right60 {
 
 }
 
+section.no-float p {
+  float: none;
+}
+
 
 img {
   max-width: 100%;
@@ -493,7 +497,7 @@ footer {
 #main-sketch {
   float: right;
   max-width: 80%;
-  
+
   /* height: 500px; */
 }
 
