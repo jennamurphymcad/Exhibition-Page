@@ -477,4 +477,57 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-alig
+  text-align: center;
+}
+
+/* Drawing Tool Start */
+
+#menu {
+  float: left;
+  max-width: 15%;
+  max-height: 1000px;
+  margin-top: 100px;
+  /* background: black; */
+}
+
+#main-sketch {
+  float: right;
+  max-width: 80%;
+  
+  /* height: 500px; */
+}
+
+input.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 20px; /* Specified height */
+  background: #a9a9a9; /* Grey background */
+  outline: none; /* Remove outline */
+  /* opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  /* transition: opacity .2s; */
+}
+
+input.slider:hover {
+  opacity: 1;
+}
+
+input.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+
+input.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  outline: black;
+  cursor: pointer;
+}
+
+/* Drawing Tool End */
