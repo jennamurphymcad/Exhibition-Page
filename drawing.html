@@ -18,7 +18,7 @@
   <!-- Place favicon.ico in the root directory -->
   <script src="js/vendor/p5.min.js" charset="utf-8"></script>
   <script src="js/vendor/p5.dom.js" charset="utf-8"></script>
-  <script src="js/sketch.js"charset="utf-8"></script>
+  <!-- <script src="js/sketch.js"charset="utf-8"></script> -->
   <script src="js/app.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -28,26 +28,49 @@
 
 <body>
   <header>
-  <div class="topnav">
-      <a  href="index.html"><b>Discover a Space Between</b></a>
-      <a class="active" href="drawing.html">Drawing Tool</a>
-      <a href="work.html">About the Work</a>
-      <div class="topnav-right">
-        <a href="https://jennamurphymcad.github.io/Capstone-Page/">Capstone Project Page</a>
-      </div>
+  <div class="grid-containerNav" id='TopNav'>
+      <a class="nav1" id='Nav1' href="index.html"><b>Discover a Space Between</b></a>
+      <a class="active nav2" id='Nav2' href="drawing.html">Drawing Tool</a>
+      <a class="nav3" id='Nav3' href="work.html">About the Work</a>
     </div>
 
   </header>
 
-  <main id="main">
-    <!-- <h1>Drawing Tool Prototype</h1> -->
-    <div id='menu' class='container'></div>
-    <div id='main-sketch' class='container'></div>
+  <main class="grid-containerDT" id='mainDTBody'>
+    <!-- <h1 class="header"></h1> -->
+          <!-- <div id='top' class='container'></div> -->
+          <div class="grid-container2" id='menu' class='container'>
+            <div class="menudiv1" id="backgroundColor"></div>
+            <div class="menudiv2" id="ForLoop"></div>
+            <div class="menudiv3" id="QV1">
+              <input type="checkbox" id="box1">
+              Random Shape Highlighter
+            </input>
+            </div>
+            <div class="menudiv4" id="QV2">
+                <input type="checkbox" id="box2">
+                Random Shape Highlighter
+              </input>
+              </div>
+            <div class="menudiv5" id="QV3">
+              <input type="checkbox" id="box3">
+              Random Shape Highlighter
+            </input>
+            </div>
+            <div class="menudiv6" id="transform"></div>
+            <div class="menudiv7" id="save"></div>
+          </div>
+          <div class="main" id='main' class='container'>
+          <div id='canvas'></div></div>
+          <!-- <section id='album'>
+            <h1>Photo Album Viewer</h1>
+            <div id="viewer" />
+        </section> -->
   </main>
 
-  <footer>
+  <!-- <footer>
     <p>Jenna Murphy | MCAD MAGWD | Fall 2020</p>
-  </footer>
+  </footer> -->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

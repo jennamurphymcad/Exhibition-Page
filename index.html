@@ -22,7 +22,7 @@
   <script src="js/vendor/p5.min.js" charset="utf-8"></script>
   <script src="js/vendor/p5.dom.js" charset="utf-8"></script>
   <script src="js/vendor/bootstrap.min.js" charset="utf-8"></script>
-  <script src="js/sketch.js"charset="utf-8"></script>
+  <!-- <script src="js/sketch.js"charset="utf-8"></script> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -31,62 +31,75 @@
 
 <body>
   <header>
-  <div class="topnav">
-    <a class="active" href="index.html"><b>Discover a Space Between</b></a>
-    <a href="drawing.html">Drawing Tool</a>
-    <a href="work.html">About the Work</a>
-    <div class="topnav-right">
-      <a href="https://jennamurphymcad.github.io/Capstone-Page/">Capstone Project Page</a>
-    </div>
-  </div>
-
-    <div class="hero-image">
-      <div class="hero-text">
+    <div class="grid-containerNav" id='TopNav'>
+        <a class="active nav1" id='Nav1' href="index.html"><b>Discover a Space Between</b></a>
+        <a class="nav2" id='Nav2' href="drawing.html">Drawing Tool</a>
+        <a class="nav3" id='Nav3' href="work.html">About the Work</a>
       </div>
-    </div>
   </header>
 
-  <main id="main">
-    <section class="left60">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-    </section>
-    <section class="right40">
+  <main class="grid-containerHOME" id="hero" >
+    <div class="gridHome1">
+      <div class="hero-image">
+        <div class="hero-text">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-spacer">    </div>
+      <div class="gridHome2" id="summary">
+        <p>Jenna Murphy, Minneapolis based artist, has been exploring what a contemporary drawing can be in today’s digital age. With a background in Intaglio Printmaking and Drawing, Jenna’s Computational Drawings aims to discover similar tactile qualities through computer code generated images. This work aims to push the boundary of what a contemporary drawing can be, while endeavoring to blur the lines between the constructs of Fine and Digital Arts.
+</p>
+      </div>
+
+    <div class="gridHome3" id="exhibitionShot2">
       <img src="img/placeholder.jpg" alt="placeholder">
-    </section>
+    </div>
 
     <!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="gridHome4 slideshow-container" id="slide">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="img/placeholder.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+  <div class="mySlides fade center">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/axis copy.jpg" >
+    <div class="text" style="border: none"><p><i>Axis</i></p>
+<p>Computational Drawing, Archival Inkjet on Cotton Rag Paper</p>
+<p>14” x 14”</p>
+</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="img/placeholder.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+  <div class="mySlides fade center">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/app9 copy.jpg" >
+    <div class="text">Encounter</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img/placeholder.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+  <div class="mySlides fade center">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/app11.jpg" >
+    <div class="text">Meridian</div>
   </div>
 
+  <div class="mySlides fade center">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/drawingtool2 copy.jpg" >
+    <div class="text">Discover 1.0</div>
+  </div>
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
-<section class="left40">
+<!-- <div class="gridHome5" id="ExhibitionShot3">
     <img src="img/placeholder.jpg" alt="placeholder">
-</section>
-<section class="right60">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-</section>
+</div> -->
+<div class="gridHome6" id="">
+    <p>Following a degree in Studio Arts at Hamline University, Jenna went on to study Interactive Design at MCAD. It was during this time that Jenna was first introduced to p5.js, a client-side JavaScript library. P5.js helped facilitate an experimental interaction with the computer, allowing Jenna the freedom to move away from traditional subject matter and explore abstract shapes and concepts.</p>
+    <p>Through iteration, the shapes multiply, shift and move across the piece. Continued experimentation reveals a balanced composition; one of an infinite number just waiting to be found.</p>
+    <p>The works created in the installation, Discover a Space Between were born out of the creation of the Drawing Tool. Each drawing builds off the last, while exploring in ways to make the tool itself more complex. </p>
+    <p>The installation as a whole is in search of exploring how digital companion pieces that are included online with the Exhibition page can generate and expose new audiences to galleries and artists work. </p>
+</div>
 <!-- The dots/circles -->
 <!-- <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
@@ -94,14 +107,10 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div> -->
 
-
-
-    <section>
-    </section>
   </main>
-  <footer>
+  <!-- <footer>
     <p>Jenna Murphy | MCAD MAGWD | Fall 2020</p>
-  </footer>
+  </footer> -->
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

@@ -267,38 +267,50 @@ textarea {
 
 
 /* Add a black background color to the top navigation */
-.topnav {
+.grid-containerNav  {
     /* background-color: #333; */
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
+.grid-containerNav a {
+  /* float: left; */
   color: #000;
-  text-align: center;
+  /* text-align: center; */
   padding: 14px 16px;
   text-decoration: none;
   font-size: 24px;
 }
 
+.grid-containerNav a#Nav2  {
+  text-align: center;
+}
+.grid-containerNav a#Nav3  {
+  text-align: center;
+}
+
 /* Change the color of links on hover */
-.topnav a:hover {
-  /* background-color: #ddd; */
-  color: pink;
+.grid-containerNav a:hover {
+  background-color: #ffff01;
+  color: #050028;
+  font-style: Underline;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
-  /* background-color: #4CAF50; */
+.grid-containerNav a.active {
+  /* background-color: #ffff01; */
   color: black;
-  text-decoration:underline;
+  /* text-decoration:underline; */
+  border-bottom: 5px #ffff01 solid;
 }
 
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-}
+/* .grid-containerNav a.active:hover {
+  /* background-color: #4CAF50; */
+  /* color: black;
+  text-decoration:underline;
+} */
+
+
 
 /* The hero image */
 .hero-image {
@@ -324,8 +336,11 @@ textarea {
 }
 
 main {
-    max-width: 960px;
-    margin: auto;
+    /* max-width: 960px; */
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    /* overflow: hidden */
 }
 
 section p {
@@ -454,7 +469,7 @@ img {
   /* background-color: #717171; */
 }
 
-/* Fading animation */
+Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -472,6 +487,20 @@ img {
   to {opacity: 1}
 }
 
+div.mySlides.fade.center {
+  border: none;
+}
+div.mySlides.fade.center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div.mySlides.fade.center div.text {
+  color: black;
+}
+/*
 footer {
   clear: both;
   left: 0;
@@ -482,40 +511,191 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+} */
+
+/* a#nav3.nav3 {
+  text-align: center; */
+  /* background-color: #ffff01;
 }
 
 /* Drawing Tool Start */
+/*
+html {
+   /* background-color: #fef9f3; */
+  /* font-family:helvetica; */
+  /* color: white; */
+  /* padding: 0;
+  margin: 0; */
+  /* max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+} */
+
+
+
+div {
+  border: 1px #D3D3D3 solid;
+  /* padding: 5px; */
+  /* padding: 0px 5px 5px 0px; */
+  /* margin: 0 auto; */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* div p {
+  padding: 5px;
+  margin: 0;
+}
+div div {
+  padding: 0;
+  margin: 0;
+} */
 
 #menu {
+  font-size: 11px;
+  min-width: 200px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+#menu h2 {
+  font-size: 16px;
+}
+
+div#main.main {
+  border: none;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  /* position: relative; */
+}
+canvas {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+}
+
+/* #menu {
   float: left;
   max-width: 15%;
   max-height: 1000px;
   margin-top: 100px;
   /* background: black; */
+/* } */
+
+.nav1 { grid-area: Nav1; }
+.nav2 { grid-area: Nav2; }
+.nav3 { grid-area: Nav3; }
+/* .item4 { grid-area: right; }
+.item5 { grid-area: footer; } */
+
+.grid-containerNav {
+  display: grid;
+  grid-template-areas:
+    /* 'header header header header header header' */
+    'Nav1 Nav1 Nav1 Nav2 Nav3';
+    /* 'menu footer footer footer footer footer'; */
+  /* grid-gap: 10px; */
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+  margin: 0 auto;
+  /* padding: 0; */
 }
 
-#main-sketch {
+
+/* .header { grid-area: header; } */
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+/* .item4 { grid-area: right; }
+.item5 { grid-area: footer; } */
+
+.grid-containerDT {
+  display: grid;
+  grid-template-areas:
+    /* 'header header header header header header' */
+    'menu menu main main main main';
+    /* 'menu footer footer footer footer footer'; */
+  /* grid-gap: 10px; */
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+  margin: 0 auto;
+  /* padding: 0; */
+}
+
+/* div.menudiv1{
+  /* padding-bottom: 0; */
+  /* margin: 0 auto;
+  padding:0;
+} */
+.menudiv1 { grid-area: backgroundColor; }
+.menudiv2 { grid-area: ForLoop; }
+.menudiv3 { grid-area: QV1; }
+.menudiv4 { grid-area: QV2; }
+.menudiv5 { grid-area: QV3; }
+.menudiv6 { grid-area: transform; }
+.menudiv7 { grid-area: save; }
+
+.grid-container2 {
+  border: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  'backgroundColor'
+  'ForLoop'
+  'QV1'
+  'QV2'
+  'QV3'
+  'transform'
+  'save'
+}
+
+/*  Home Grid */
+.gridHome1 { grid-area: a; }
+.gridHome2 { grid-area: b; }
+.gridHome3 { grid-area: c; }
+.gridHome4 { grid-area: d; }
+.gridHome5 { grid-area: e; }
+.gridHome6 { grid-area: f; }
+/* .gridHome7 { grid-area: g; } */
+
+.grid-containerHOME {
+  border: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  'a a a a a'
+  'b b b c c'
+  'd d d d d'
+  'f f f f f'
+
+}
+
+div.grid-container2 div {
+  padding: 10px;
+
+}
+
+/* #main {
   float: right;
-  max-width: 80%;
-
+  max-width: 90%;
   /* height: 500px; */
-}
+/* }  */
 
 input.slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
-  width: 100%; /* Full-width */
+  width: 95%; /* Full-width */
   height: 20px; /* Specified height */
   background: #a9a9a9; /* Grey background */
   outline: none; /* Remove outline */
   /* opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  /* -webkit-transition: .2s; /* 0.2 seconds transition on hover */ */
   /* transition: opacity .2s; */
+  margin:auto;
 }
 
-input.slider:hover {
+/* input.slider:hover {
   opacity: 1;
-}
+} */
 
 input.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -534,4 +714,56 @@ input.slider::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* Drawing Tool End */
+/* #album {
+  clear: both;
+} */
+/* button style */
+
+
+.Button {
+  background-color: white; /* Green */
+  border: 2px solid #555555;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+  /* margin: 4px 2px; */
+  /* transition-duration: 0.4s; */
+  cursor: pointer;
+}
+
+button.Button {
+  /* margin: 0px 5px; */
+  /* text-align: center; */
+  /* padding: 5px; */
+}
+
+ .ButtonActive {
+  background-color: #555555;
+  color: white;
+}
+
+div#save.menudiv7 button.Button {
+  width: 100%;
+  height: 100%;
+  background-color: #ffff01;
+  color: black;
+  border: none;
+  /* padding: 0px; */
+  /* margin: 0 auto; */
+}
+
+div#save.menudiv7 button.Button:hover {
+  /* width: 100%;
+  height: 100%; */
+  background-color: #555555;
+  /* padding: 0px; */
+  /* color: black; */
+  /* border: 2px solid white; */
+}
+/* .Button:hover {
+  background-color: #fef9f3;
+  color: white;
+} */
