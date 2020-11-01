@@ -16,6 +16,8 @@ html {
   font-size: 1em;
   line-height: 1.4;
   font-family: 'Raleway', sans-serif;
+  max-height: 100%;
+  height: 100vh;
 }
 
 /*
@@ -314,10 +316,10 @@ textarea {
 
 /* The hero image */
 .hero-image {
-  background-image: url("../img/placeholder.jpg");
+  background-image: url("../img/INSTALL.jpg");
   /* Set a specific height */
   height: 50%;
-  height: 500px;
+  height: 600px;
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -551,11 +553,21 @@ div div {
   margin: 0;
 } */
 
-#menu {
+div#menu {
   font-size: 11px;
-  min-width: 200px;
-  max-height: 100%;
+  min-width: 215px;
+  max-height: 500px;
+  /* max-height: 100%; */
+  min-height: 100%;
+  /* height: 100vh; */
   margin: 0 auto;
+  /* margin:5px; */
+           /* padding:5px;
+           background-color: green;
+           width: 500px;
+           height: 110px; */
+           /* overflow: auto;
+           text-align:justify; */
 }
 #menu h2 {
   font-size: 16px;
@@ -563,15 +575,20 @@ div div {
 
 div#main.main {
   border: none;
+    /* width: 1000px; */
+    /* height: 500px; */
   max-height: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 0px;
+
   /* position: relative; */
+  /* background-color: black; */
 }
-canvas {
-  /* max-width: 100%; */
-  /* max-height: 100%; */
+#canvas {
+max-width:100%;
+margin: 0 auto;
+    max-height: 100%;
 }
 
 /* #menu {
@@ -608,7 +625,7 @@ canvas {
 /* .item4 { grid-area: right; }
 .item5 { grid-area: footer; } */
 
-.grid-containerDT {
+div.grid-containerDT {
   display: grid;
   grid-template-areas:
     /* 'header header header header header header' */
@@ -618,6 +635,8 @@ canvas {
   /* background-color: #2196F3; */
   /* padding: 10px; */
   margin: 0 auto;
+  max-height: 100%;
+  /* overflow: hidden; */
   /* padding: 0; */
 }
 
@@ -634,7 +653,8 @@ canvas {
 .menudiv6 { grid-area: transform; }
 .menudiv7 { grid-area: save; }
 
-.grid-container2 {
+div.grid-container2 {
+  max-height: 100%;
   border: none;
   margin: 0 auto;
   display: grid;

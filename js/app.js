@@ -14,19 +14,28 @@ let r, g, b, r2, g2, b2, r3, g3, b3;
 // var bucketRegion = "us-east-2";
 // var IdentityPoolId = "us-east-2:3196ef8e-9de3-4f73-a386-4a2d587c10ac";
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-    // clientHeight = document.getElementById('main').clientHeight;
-    // clientWidth = document.getElementById('main').clientWidth;
+//   let b = document.getElementById('main');
+// let w = b.clientWidth;
+// let h = b.clientHeight;
+// console.log(w, h);
+    // clientHeight = document.getElementById('mainDTBody').clientHeight;
+    // clientWidth = document.getElementById('mainDTBody').clientWidth;
     // canvas = createCanvas(clientWidth, clientHeight);
-    // canvas.parent('main');
+    // canvas.parent('canvas');
     // window.canvas = canvas;
-canvas = createCanvas(windowWidth, windowHeight);
- // canvas = createCanvas(1000, 1000);
+    canvas = createCanvas(windowWidth/1.2, windowHeight);
+
+ // canvas = createCanvas(w, h);
  // console.log(canvas.elt);
  frameRate(5);
  angleMode(DEGREES);
 
-  canvas.parent('canvas');
+  canvas.parent('mainDTBody');
 
   r= random(255);
   g= random(255);
