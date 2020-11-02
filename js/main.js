@@ -37,3 +37,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+$('.text-box').scroll(function()
+   {
+     var div = $(this);
+      if (div[0].scrollHeight - div.scrollTop() == div.height())
+      {
+          $('.text-box').removeClass("text-box-shadow");
+      }else{
+          $('.text-box').addClass("text-box-shadow");
+      }
+   });
