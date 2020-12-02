@@ -199,6 +199,7 @@ chk3.onchange = function() {
    Savebutton = createButton('Save Image');
    Savebutton.parent('save');
    Savebutton.addClass('Button');
+   Savebutton.addClass('Save');
    // button.position(20, 400);
    Savebutton.mousePressed(downloadPNG);
 

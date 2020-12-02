@@ -747,8 +747,8 @@ div.grid-container2 {
 .gridWork1 { grid-area: spacer; }
 .gridWork2 { grid-area: log; }
 .gridWork3 { grid-area: spacerb; }
-/* .item4 { grid-area: right; }
-.item5 { grid-area: footer; } */
+/* .item4 { grid-area: right; }*/
+.item5 { grid-area: footer; }
 
 .grid-containerWORK {
   display: grid;
@@ -757,7 +757,7 @@ div.grid-container2 {
     /* 'a a a a a' */
     /* 'spacer spacer spacer spacer spacer' */
     'spacer spacer spacer log spacerb'
-    /* 'menu footer footer footer footer footer'; */
+    'footer footer footer footer footer';
   /* grid-gap: 10px; */
   /* background-color: #2196F3; */
   /* padding: 10px; */
@@ -851,10 +851,12 @@ input.slider::-moz-range-thumb {
   cursor: pointer;
 }
 
+/* div.menudiv6 .button {
+  margin-left: 5px;
+} */
+
 button.Button {
-  /* margin: 0px 5px; */
-  /* text-align: center; */
-  /* padding: 5px; */
+  margin: 0px 5px;
 }
 
  .ButtonActive {
@@ -868,14 +870,20 @@ div#save.menudiv7 button.Button {
   background-color: #ffff01;
   color: black;
   border: none;
-  padding: 0px;
-  /* margin: 0 auto;
+  padding: 15px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 2em;
 }
 
+div.grid-container2 div#save {
+    padding: 0px;
+}
 div#save.menudiv7 button.Button:hover {
   /* width: 100%;
   height: 100%; */
   background-color: #555555;
+  color: white;
   /* padding: 0px; */
   /* color: black; */
   /* border: 2px solid white; */
